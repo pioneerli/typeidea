@@ -32,12 +32,15 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog',
+    'django_celery_beat',
+    'django_celery_results',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -137,3 +140,7 @@ LOGGING = {
         'level': 'WARNING',
     },
 }
+
+# CELERY_RESULT_BACKEND = 'django-db'
+# CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+# CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'

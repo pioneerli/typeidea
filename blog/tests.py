@@ -55,10 +55,6 @@ def test(arg1, arg2=1):
 
 
 if __name__ == "__main__":
-    # test_method()
-    # logging.basicConfig(level=logging.DEBUG)
-    # logging.debug('test info')
-
     logging.basicConfig(level=logging.DEBUG)
     logger = logging.getLogger(__name__)
     # print(logger)
